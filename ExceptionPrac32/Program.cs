@@ -8,15 +8,14 @@ namespace ExceptionPrac32
 {
     internal static class Program
     {
-        /// <summary>
-        /// 해당 애플리케이션의 주 진입점입니다.
-        /// </summary>
-        [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            string[] array = { "가", "나" };
+            Console.WriteLine("숫자를 입력해 주세요:");
+            int input = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("입력한 위치의 값은 '" + array[input]
+                + "' 입니다.");
         }
     }
 }
